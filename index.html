@@ -7,29 +7,40 @@
     <link rel="icon" href="images/icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
     <link rel="manifest" href="manifest.webmanifest">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
 </head>
 <body class="page-body">
 <header class="main-header">
     <nav class="main-navigation">
         <a class="main-header-logo"><img src="images/logo-index.svg" alt="logo of borodinski barbershop" width="371" height="155"></a>
-        <ul class="site-navigation">
-            <li>
-                <a href="blank.html">About</a>
-            </li>
-            <li>
-                <a href="blank.html">News</a>
-            </li>
-            <li>
-                <a href="pricing.html">Pricing</a>
-            </li>
-            <li>
-                <a href="catalog.html">Store</a>
-            </li>
-            <li>
-                <a href="blank.html">Contacts</a>
-            </li>
-        </ul>
-        <a class="login-link" href="blank.html">Log In</a>
+        <div class="main-navigation-wrapper">
+            <div class="container">
+                <ul class="site-navigation">
+                    <li>
+                        <a href="blank.html">About</a>
+                    </li>
+                    <li>
+                        <a href="blank.html">News</a>
+                    </li>
+                    <li>
+                        <a href="pricing.html">Pricing</a>
+                    </li>
+                    <li>
+                        <a href="catalog.html">Store</a>
+                    </li>
+                    <li>
+                        <a href="blank.html">Contacts</a>
+                    </li>
+                </ul>
+                <div class="user-navigation">
+                    <a class="login-link" href="blank.html">Log In</a>
+                </div>
+            </div>
+        </div>
     </nav>
 </header>
 
@@ -52,124 +63,126 @@
             </li>
         </ul>
     </section>
-    <section class="news">
-        <h2>News</h2>
-        <ul class="news-list">
-            <li class="news-item">
-                <p>News 1</p>
-                <time datetime="2023-12-21">21st December</time>
-            </li>
-            <li class="news-item">
-                <p>News 2</p>
-                <time datetime="2023-12-21">21st December</time>
-            </li>
-        </ul>
-        <a class="button" href="#">More news</a>
-    </section>
-    <section class="gallery">
-        <h2>Photos</h2>
-        <figure class="gallery-content">
-            <a href="#">
-                <img src="images/interior-of-the-shop.jpg" alt="interior photo with barber chairs and a mirror" width="286" height="164">
-            </a>
-        </figure>
-        <button class="button" type="button" disabled>Previous</button>
-        <button class="button" type="button">Next</button>
-    </section>
-    <section>
+    <div class="index-columns">
+        <section class="news">
+            <h2>News</h2>
+            <ul class="news-list">
+                <li class="news-item">
+                    <p>News 1</p>
+                    <time datetime="2023-12-21">21st December</time>
+                </li>
+                <li class="news-item">
+                    <p>News 2</p>
+                    <time datetime="2023-12-21">21st December</time>
+                </li>
+            </ul>
+            <a class="button" href="#">More news</a>
+        </section>
+        <section class="gallery">
+            <h2>Photos</h2>
+            <figure class="gallery-content">
+                <a href="#">
+                    <img src="images/interior-of-the-shop.jpg" alt="interior photo with barber chairs and a mirror" width="286" height="164">
+                </a>
+            </figure>
+            <button class="button gallery-button gallery-button-back" type="button" disabled>Previous</button>
+            <button class="button gallery-button gallery-button-next" type="button">Next</button>
+        </section>
+    </div>
+    <section class="contacts">
         <h2>Contacts</h2>
         <p>
             Barbershop Borodinski <br>
             Location: 1651 Willard Road, Latriceshire, FL 48221 <br>
-            Contact: <a href="tel:+17348957190">+1 734-895-7190</a>
+            Contact: <a class="contact-phone" href="tel:+17348957190">+1 734-895-7190</a>
         </p>
         <p>
             Hours: <br>
             Monday-Friday: 9AM-6PM <br>
             Saturday-Sunday: 10AM-5PM
         </p>
-        <a href="#">Navigate</a>
-        <a href="#">Call us</a>
+        <a class="button" href="#">Navigate</a>
+        <a class="button" href="#">Call us</a>
     </section>
-    <section>
+    <section class="appointment">
         <h2>Book now</h2>
-        <p>Select a date and we will contact you to confirm the availability</p>
-        <form action="https://echo.htmlacademy.ru" method="post">
-            <p>
+        <p class="appointment-info">Select a date and we will contact you to confirm the availability</p>
+        <form class="appointment-form" action="https://echo.htmlacademy.ru" method="post">
+            <p class="appointment-item">
                 <label for="appointment-date">Date</label>
                 <input id="appointment-date" type="text" name="date" placeholder="12.31.2023">
             </p>
-            <p>
+            <p class="appointment-item">
                 <label for="appointment-time">Time</label>
                 <input id="appointment-time" type="text" name="time" placeholder="10:00">
             </p>
-            <p>
+            <p class="appointment-item">
                 <label for="appointment-name">Name</label>
                 <input id="appointment-name" type="text" name="name" placeholder="Harold">
             </p>
-            <p>
+            <p class="appointment-item">
                 <label for="appointment-phone">Phone</label>
                 <input id="appointment-phone" type="tel" name="phone" placeholder="+1 270-633-4108">
             </p>
-            <button type="submit">Submit</button>
+            <button class="button" type="submit">Submit</button>
         </form>
     </section>
 </main>
 
-<footer>
-    <section>
+<footer class="main-footer">
+    <section class="footer-contacts">
         <h2>Our location</h2>
         <p>
             Barbershop Borodinski <br>
             Address: 1651 Willard Road, Latriceshire, FL 48221 <br>
-            <a href="blank.html">Directions</a><br>
-            Phone: <a href="tel:+17348957190">+1 734-895-7190</a>
+            <a class="footer-address" href="blank.html">Directions</a><br>
+            Phone: <a class="footer-phone" href="tel:+17348957190">+1 734-895-7190</a>
         </p>
     </section>
-    <section>
+    <section class="footer-social-media">
         <h2>Let's be friends!</h2>
         <ul>
             <li>
-                <a href="#">VK</a>
+                <a class="social-button" href="#">VK</a>
             </li>
             <li>
-                <a href="#">Facebook</a>
+                <a class="social-button" href="#">Facebook</a>
             </li>
             <li>
-                <a href="#">Instagram</a>
+                <a class="social-button" href="#">Instagram</a>
             </li>
         </ul>
     </section>
-    <p>
+    <p class="footer-copyright">
         Design by:
-        <a href="https://htmlacademy.ru">HTML Academy</a>
+        <a class="button" href="https://htmlacademy.ru">HTML Academy</a>
     </p>
 </footer>
 
-<section>
+<section class="modal modal-login">
     <h2>Login</h2>
-    <p>
+    <p class="modal-description">
         Enter your login and password below
     </p>
-    <form action="https://echo.htmlacademy.ru" method="post">
+    <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
         <label for="login-login">Login</label>
-        <input id="login-login" type="email" name="name" placeholder="email@example.com">
+        <input class="login-icon-user" id="login-login" type="email" name="name" placeholder="email@example.com">
 
         <label for="login-password">Password</label>
-        <input id="login-password" type="password" name="password" placeholder="*******">
+        <input class="login-icon-password" id="login-password" type="password" name="password" placeholder="*******">
 
-        <label>
+        <label class="login-checkbox">
             <input type="checkbox" name="remember">
         </label>
-        <a href="#">Forgot your password?</a>
-        <button type="submit">Log In</button>
+        <a class="restore" href="#">Forgot your password?</a>
+        <button class="button" type="submit">Log In</button>
     </form>
-    <button type="button">Close</button>
+    <button class="modal-close" type="button">Close</button>
 </section>
-<section>
+<section class="modal modal-map">
     <h2>Directions</h2>
     <!--    map is going to be here-->
-    <button type="button">Close</button>
+    <button class="modal-close" type="button">Close</button>
 </section>
 
 </body>

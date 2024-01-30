@@ -1,0 +1,143 @@
+/*variables*/
+
+:root {
+    --main-black: #000000;
+    --main-white: #ffffff;
+
+    --hover-black: #242424;
+    --breadcrumbs-black: #ABA9A7;
+    --disabled-gray: #F9F6F3;
+    --light-gray: #E5E5E5;
+
+    --special: #663d15;
+}
+
+/*global*/
+
+body {
+    min-width: 960px;
+    margin: 0;
+    padding: 0;
+    font-family: 'PT Sans', Arial, sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 700;
+    color: var(--main-white);
+    text-transform: uppercase;
+    background-color: var(--main-black);
+    background-image: url("../images/background.jpg");
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/*main navigation*/
+
+.main-navigation {
+    font-size: 16px;
+    line-height: 20px;
+    color: var(--main-white);
+    background-color: transparent;
+}
+
+.main-navigation-wrapper {
+    background-color: var(--main-black);
+}
+
+.site-navigation {
+    list-style: none;
+}
+
+.site-navigation-current a:not([href]) {
+    background-color: var(--main-black);
+}
+
+/*user navigation*/
+
+.site-navigation a,
+.user-navigation a {
+    color: var(--main-white);
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus,
+.user-navigation a:hover,
+.user-navigation a:focus {
+    background-color: var(--hover-black);
+}
+
+/*benefits*/
+
+.benefits-list {
+    list-style: none;
+}
+
+.benefits-item {
+    text-align: center;
+}
+
+.benefits-item h3 {
+    font-size: 30px;
+    line-height: 42px;
+}
+
+/*index columns*/
+
+.index-columns {
+    color: var(--main-black);
+    background-color: var(--main-white);
+    background-image: url("../images/pattern-light.png");
+    background-position: 0 0;
+    background-repeat: repeat;
+}
+
+.index-columns h2 {
+    font-size: 30px;
+    line-height: 42px;
+}
+
+/*news*/
+
+.news-list {
+    list-style: none;
+}
+
+/*gallery*/
+
+.gallery-content {
+    background-color: var(--breadcrumbs-black);
+    border: 7px solid var(--main-white);
+}
+
+/*button*/
+
+.button {
+    font: inherit;
+    text-align: center;
+    color: var(--main-white);
+    vertical-align: center;
+    text-transform: uppercase;
+    background-color: var(--main-black);
+    border: none;
+}
+
+.button:hover,
+.button:focus,
+.button:active {
+    background-color: var(--special);
+}
+
+.button.disabled,
+.button:disabled {
+    cursor: default;
+    opacity: 0.5;
+    background-color: var(--main-black);
+}
