@@ -7,7 +7,7 @@
     --secondary-black: #242424;
     --breadcrumbs-black: #ABA9A7;
     --disabled-gray: #F9F6F3;
-    --light-gray: #E5E5E5;
+    --light-gray: #e5e5e5;
 
     --special: #663d15;
 }
@@ -37,6 +37,12 @@ a {
 img {
     max-width: 100%;
     height: auto;
+}
+
+/*main header*/
+
+.inner-page .main-header {
+    background-color: var(--main-black);
 }
 
 /*main navigation*/
@@ -160,6 +166,118 @@ img {
     border-color: var(--special);
 }
 
+/*page content*/
+
+.inner-page {
+    color: var(--main-black);
+    background-color: var(--disabled-gray);
+    background-image: url("../images/pattern-light.png");
+    background-position: 0 0;
+    background-repeat: repeat;
+}
+
+.page-title {
+    font-size: 30px;
+    line-height: 42px;
+}
+
+/*breadcrumbs*/
+
+.breadcrumbs {
+    list-style: none;
+}
+
+.breadcrumbs a {
+    color: var(--main-black);
+}
+
+.breadcrumbs a:hover,
+.breadcrumbs a:focus {
+    text-decoration: underline;
+}
+
+.breadcrumbs-current {
+    color: var(--breadcrumbs-black);
+}
+
+/*filters*/
+
+.filter legend {
+    font-size: 24px;
+    line-height: 30px;
+}
+
+.filter ul {
+    list-style: none;
+    font-size: 18px;
+}
+
+.filter-input-checkbox:hover + label,
+.filter-input-checkbox:focus + label {
+    color: var(--special);
+}
+
+/*catalog*/
+
+.catalog-list {
+    list-style: none;
+}
+
+.catalog-item {
+    background-color: var(--disabled-gray);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.catalog-item a {
+    color: var(--main-black);
+}
+
+.catalog-item h3 {
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.catalog-category {
+    text-transform: none;
+}
+
+.catalog-item-price b {
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+    background-color: var(--light-gray);
+}
+
+.catalog-item-price .button {
+    line-height: 18px;
+    color: var(--main-white);
+}
+
+/*pagination*/
+
+.pagination-list {
+    list-style: none;
+}
+
+.pagination-item a {
+    color: var(--main-white);
+    background-color: var(--main-black);
+}
+
+.pagination-item a:hover,
+.pagination-item a:focus,
+.pagination-item a:active {
+    background-color: var(--special);
+}
+
+.pagination-item-current a,
+.pagination-item-current a:hover,
+.pagination-item-current a:focus,
+.pagination-item-current a:active {
+    color: var(--main-black);
+    background-color: var(--main-white);
+}
+
 /*main footer*/
 
 .main-footer {
@@ -255,7 +373,7 @@ img {
 /*forgot password*/
 
 .restore {
-    color: var(--main-black);
+    color: var(--light-gray);
     text-decoration: underline;
 }
 
