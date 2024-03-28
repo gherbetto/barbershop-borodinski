@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="page" lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Product - Barbershop "Borodinski"</title>
@@ -9,17 +9,19 @@
     <link rel="manifest" href="manifest.webmanifest">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
 </head>
 
-<body>
+<body class="page-body inner-page">
 
-<header>
-    <nav>
-        <a href="index.html"><img src="images/logo.svg" alt="logo of borodinski barbershop" width="371" height="155"></a>
-        <ul>
+<header class="main-header">
+    <nav class="main-navigation container">
+        <a class="main-header-logo" href="index.html">
+            <img src="images/logo.svg" alt="logo of borodinski barbershop" width="111" height="24">
+        </a>
+        <ul class="site-navigation">
             <li>
                 <a href="blank.html">About</a>
             </li>
@@ -29,118 +31,127 @@
             <li>
                 <a href="pricing.html">Pricing</a>
             </li>
-            <li>
+            <li class="site-navigation-current">
                 <a href="catalog.html">Store</a>
             </li>
             <li>
                 <a href="blank.html">Contacts</a>
             </li>
         </ul>
-        <a href="blank.html">Log In</a>
+        <div class="user-navigation">
+            <a class="login-link" href="blank.html">Log In</a>
+        </div>
     </nav>
 </header>
 
-<main>
-    <h1>Travel Kit "Baxter of California"</h1>
-    <ul>
+<main class="page-catalog container">
+
+    <h1 class="page-title">Travel Kit "Baxter of California"</h1>
+
+    <ul class="breadcrumbs">
         <li><a href="index.html">Main Page</a></li>
         <li><a href="catalog.html">Store</a></li>
-        <li><a href="catalog.html">Aftercare Products</a></li>
-        <li>Travel Kit "Baxter of California"</li>
+        <li><a href="catalog.html">Products</a></li>
+        <li class="breadcrumbs-current">Travel Kit "Baxter of California"</li>
     </ul>
 
-    <section>
-        <h2>Product images</h2>
-        <img src="images/large-product-photo.jpg" width="460" height="498" alt="photo of the whole travel kit">
-        <ul>
+    <section class="product-photos">
+        <h2>Product photos</h2>
+        <img class="product-photo-full" src="images/large-product-photo.jpg" width="460" height="498" alt="the whole travel kit">
+        <ul class="product-photo-thumbnails">
             <li>
-                <img src="images/thumbnail-photo-1.jpg" width="140" height="149" alt="photo from the front of the box">
+                <img src="images/thumbnail-photo-1.jpg" width="140" height="149" alt="the front of the box">
             </li>
             <li>
-                <img src="images/thumbnail-photo-2.jpg" width="140" height="149" alt="photo of the carrying case">
+                <img src="images/thumbnail-photo-2.jpg" width="140" height="149" alt="the carrying case">
             </li>
             <li>
-                <img src="images/thumbnail-photo-3.jpg" width="140" height="149" alt="photo of box with the carrying case and the contents of the travel set">
+                <img src="images/thumbnail-photo-3.jpg" width="140" height="149" alt="box with the carrying case and the contents of the travel set">
             </li>
         </ul>
     </section>
 
-    <section>
+    <section class="product-info">
         <h2>Product Description</h2>
-        <p>In Stock</p>
-        <p>SKU: ZG011AQA</p>
-        <p>The DOPP wash bag is a Baxter of California staple and this travel kit includes all your daily cleansing and shaving lotions and potions in an airport-approved travel ready 60ml size with leak resistant caps. This military-inspired bag is made from a robust and waterproof fabric and is secured with a robust zip closure.</p>
-        <p>
-            $29.99
-            <button type="button">Add to cart</button>
-        </p>
-        <h3>Contents:</h3>
-        <ul>
-            <li>60ml Daily Face Wash</li>
-            <li>60ml Oil Free Moisturiser</li>
-            <li>60ml After Shave Balm</li>
-            <li>60ml Super Close Shave Formula</li>
-            <li>60ml Daily Protein Shampoo</li>
-            <li>Dopp Wash Bag</li>
-        </ul>
+        <div class="product-description">
+            <p class="product-availability">In Stock</p>
+            <p class="product-sku">SKU: ZG011AQA</p>
+            <p class="product-text">The DOPP wash bag is a Baxter of California staple and this travel kit includes all
+                your daily cleansing and shaving lotions and potions in an airport-approved travel ready 60ml size with
+                leak resistant caps. This military-inspired bag is made from a robust and waterproof fabric and is
+                secured with a robust zip closure.</p>
+            <p class="product-price">
+                <b>$29.99</b>
+                <button class="button" type="button">Add to cart</button>
+            </p>
+            <h3>Contents:</h3>
+            <ul>
+                <li>60ml Daily Face Wash</li>
+                <li>60ml Oil Free Moisturiser</li>
+                <li>60ml After Shave Balm</li>
+                <li>60ml Super Close Shave Formula</li>
+                <li>60ml Daily Protein Shampoo</li>
+                <li>Dopp Wash Bag</li>
+            </ul>
+        </div>
     </section>
 </main>
 
-<footer>
-    <section>
+<footer class="main-footer">
+    <section class="footer-contacts">
         <h2>Our location</h2>
         <p>
             Barbershop Borodinski <br>
             Address: 1651 Willard Road, Latriceshire, FL 48221 <br>
-            <a href="blank.html">Directions</a><br>
-            Phone: <a href="tel:+17348957190">+1 734-895-7190</a>
+            <a class="footer-address" href="blank.html">Directions</a><br>
+            Phone: <a class="footer-phone" href="tel:+17348957190">+1 734-895-7190</a>
         </p>
     </section>
-    <section>
+    <section class="footer-social-media">
         <h2>Let's be friends!</h2>
         <ul>
             <li>
-                <a href="#">VK</a>
+                <a class="social-button" href="#">VK</a>
             </li>
             <li>
-                <a href="#">Facebook</a>
+                <a class="social-button" href="#">Facebook</a>
             </li>
             <li>
-                <a href="#">Instagram</a>
+                <a class="social-button" href="#">Instagram</a>
             </li>
         </ul>
     </section>
-    <p>
+    <p class="footer-copyright">
         Design by:
-        <a href="https://htmlacademy.ru">HTML Academy</a>
+        <a class="button" href="https://htmlacademy.ru">HTML Academy</a>
     </p>
 </footer>
 
-<section>
+<section class="modal modal-login">
     <h2>Login</h2>
-    <p>
+    <p class="modal-description">
         Enter your login and password below
     </p>
-    <form action="https://echo.htmlacademy.ru" method="post">
+    <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
         <label for="login-login">Login</label>
-        <input id="login-login" type="email" name="name" placeholder="email@example.com">
+        <input class="login-icon-user" id="login-login" type="email" name="name" placeholder="email@example.com">
 
         <label for="login-password">Password</label>
-        <input id="login-password" type="password" name="password" placeholder="*******">
+        <input class="login-icon-password" id="login-password" type="password" name="password" placeholder="*******">
 
-        <label>
+        <label class="login-checkbox">
             <input type="checkbox" name="remember">
+            Remember me
         </label>
-        <a href="#">Forgot your password?</a>
-        <button type="submit">Log In</button>
+        <a class="restore" href="#">Forgot your password?</a>
+        <button class="button" type="submit">Log In</button>
     </form>
-    <button type="button">Close</button>
+    <button class="modal-close" type="button">Close</button>
 </section>
-
-<section>
+<section class="modal modal-map">
     <h2>Directions</h2>
-<!--    map is going to be here-->
-    <button type="button">Close</button>
+    <!--    map is going to be here-->
+    <button class="modal-close" type="button">Close</button>
 </section>
 
 </body>
