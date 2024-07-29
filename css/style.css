@@ -40,16 +40,16 @@ img {
 }
 
 .visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 
 /*grid*/
@@ -143,6 +143,8 @@ img {
 
 .main-header-logo {
     order: 2;
+    width: 371px;
+    height: 155px;
 }
 
 .inner-page .main-navigation-wrapper {
@@ -165,6 +167,10 @@ img {
     min-height: 70px;
 }
 
+.site-navigation-current {
+    position: relative;
+}
+
 .site-navigation-current a:not([href]) {
     background-color: var(--main-black);
 }
@@ -173,6 +179,10 @@ img {
 
 .user-navigation {
     max-width: 140px;
+}
+
+.inner-page .user-navigation {
+    margin-left: auto;
 }
 
 .site-navigation a,
@@ -223,8 +233,7 @@ img {
 
 .benefits-list {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
     margin: 0;
     padding: 0;
     list-style: none;
@@ -267,14 +276,14 @@ img {
     margin-bottom: 35px;
     color: var(--main-black);
     background-color: var(--main-white);
-    background-image:
-        url("../images/line.png"),
-        url("../images/pattern-light.png");
+    background-image: url("../images/line.png"),
+    url("../images/pattern-light.png");
     background-position: center, 0 0;
     background-repeat: no-repeat, repeat;
 }
 
 .index-columns h2 {
+    margin: 0 0 25px;
     font-size: 30px;
     line-height: 42px;
 }
@@ -282,12 +291,25 @@ img {
 /*news*/
 
 .news {
+    width: 380px;
 }
 
 .news-list {
     margin: 0 0 25px;
     padding: 0;
     list-style: none;
+}
+
+.news-item {
+    margin-bottom: 25px;
+}
+
+.news-item p {
+    margin: 0;
+}
+
+.news-item time {
+    text-transform: none;
 }
 
 /*button*/
@@ -359,6 +381,14 @@ img {
 
 /*contacts*/
 
+.contacts {
+    width: 380px;
+}
+
+.contacts p {
+    margin: 0 0 25px;
+}
+
 .contact-phone {
     color: inherit;
 }
@@ -392,7 +422,7 @@ img {
 
 .appointment-item input {
     width: 140px;
-    padding: 8px 15px 7px 15px;
+    padding: 8px 13px 7px;
     font: inherit;
     background-color: transparent;
     border: 2px solid var(--main-black);
@@ -620,14 +650,28 @@ img {
     background-repeat: repeat;
 }
 
+/*.inner-page .main-footer {*/
+/*    margin-top: 45px;*/
+/*    background-image:*/
+/*        linear-gradient(to bottom, black, transparent),*/
+/*        url("img/pattern-dark.jpg");*/
+/*    background-size: 10px 40px, auto;*/
+/*    background-position: 0 0;*/
+/*    background-repeat: repeat-x, repeat;*/
+/*}*/
+
 .main-footer .container {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
 }
 
 .footer-contacts {
     margin: 0;
     width: 320px;
+}
+
+.footer-contacts p {
+    margin: 0;
 }
 
 .footer-contacts a {
@@ -657,10 +701,12 @@ img {
 }
 
 .footer-social-media h2 {
+    margin: 0 0 15px;
     font-size: 14px;
+    display: block;
 }
 
-/*social button*/
+/*social buttons*/
 
 .social-button {
     display: flex;
@@ -686,6 +732,17 @@ img {
     max-width: 150px;
     margin: 0;
     justify-self: end;
+    text-align: center;
+}
+
+.footer-copyright .button {
+    display: block;
+    margin-right: 0;
+}
+
+.footer-copyright b {
+    display: block;
+    margin-bottom: 15px;
 }
 
 .footer-copyright .button:hover,
@@ -697,7 +754,7 @@ img {
 /*modal*/
 
 .modal {
-    display: none;
+    /*display: none;*/
     color: var(--main-black);
     background-color: var(--disabled-gray);
     background-image: url("../images/pattern-light.png");
@@ -712,10 +769,20 @@ img {
     line-height: 42px;
 }
 
+.modal-description {
+    margin: 0 0 10px;
+}
+
 /*login form*/
+
+.login-form p {
+    margin: 0 0 10px;
+}
 
 .login-form input[type="email"],
 .login-form input[type="password"] {
+    box-sizing: border-box;
+    width: 300px;
     font: inherit;
     color: var(--main-black);
     text-transform: uppercase;
@@ -725,6 +792,19 @@ img {
 
 .login-form input:focus {
     border-color: var(--special);
+}
+
+.login-form .login-help {
+    margin: 15px 0;
+}
+
+.login-checkbox {
+    position: relative;
+}
+
+.login-checkbox:hover,
+.login-checkbox:focus {
+    color: var(--special);
 }
 
 .login-icon-user {

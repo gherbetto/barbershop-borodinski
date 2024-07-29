@@ -58,7 +58,8 @@
         <ul class="benefits-list">
             <li class="benefits-item">
                 <h3>Fast</h3>
-                <p>We do our job quickly! Two hours will fly by and you will be the happy owner of a stylish haircut!</p>
+                <p>We do our job quickly! Two hours will fly by and you will be the happy owner of a stylish
+                    haircut!</p>
             </li>
             <li class="benefits-item">
                 <h3>Cool</h3>
@@ -200,7 +201,7 @@
             </ul>
         </section>
         <p class="footer-copyright">
-            Design by:
+            <b>Design by:</b>
             <a class="button" href="https://htmlacademy.ru">HTML Academy</a>
         </p>
     </div>
@@ -212,17 +213,22 @@
         Enter your login and password below
     </p>
     <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
-        <label class="visually-hidden" for="login-login">Login</label>
-        <input class="login-icon-user" id="login-login" type="email" name="name" placeholder="email@example.com">
-
-        <label class="visually-hidden" for="login-password">Password</label>
-        <input class="login-icon-password" id="login-password" type="password" name="password" placeholder="*******">
-
-        <label class="login-checkbox">
-            <input class="visually-hidden" type="checkbox" name="remember">
-            Remember me
-        </label>
-        <a class="restore" href="#">Forgot your password?</a>
+        <p>
+            <label class="visually-hidden" for="login-login">Login</label>
+            <input class="login-icon-user" id="login-login" type="email" name="name" placeholder="email@example.com">
+        </p>
+        <p>
+            <label class="visually-hidden" for="login-password">Password</label>
+            <input class="login-icon-password" id="login-password" type="password" name="password"
+                   placeholder="*******">
+        </p>
+        <p class="login-help">
+            <label class="login-checkbox">
+                <input class="visually-hidden" type="checkbox" name="remember">
+                Remember me
+            </label>
+            <a class="restore" href="#">Forgot your password?</a>
+        </p>
         <button class="button" type="submit">Log In</button>
     </form>
     <button class="modal-close" type="button">Close</button>
