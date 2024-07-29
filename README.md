@@ -25,7 +25,7 @@ Preview: [Barbershop Borodinski](https://gherbetto.github.io/barbershop-borodins
 
 ## Disclaimer
 
-Please note no copyright infringement is intended, I do not own nor claim to own the provided design or the educational assets used in this project.
+Please note no copyright infringement is intended. The design is not owned by me.
 
 ## Support
 
